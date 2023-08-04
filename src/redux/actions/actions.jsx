@@ -2,8 +2,8 @@ import axios from 'axios';
 
 export function getProducts() {
     return async function (dispatch) {
-        // var json = await axios.get('http://localhost:3000/products')
-        var json = await axios.get('https://belgrano-backend.onrender.com/products')
+        var json = await axios.get('http://localhost:3000/products')
+        // var json = await axios.get('https://belgrano-backend.onrender.com/products')
 
         return dispatch({
             type: 'GET_PRODUCTS',
@@ -36,7 +36,8 @@ export function filterForPrice(payload){
 export function getProductsForID(id) {
   return async function (dispatch) {
     try {
-      let json = await axios.get(`https://belgrano-backend.onrender.com/products/id/${id}`);
+      let json = await axios.get(`http://localhost:3000/products/id/${id}`);
+      // let json = await axios.get(`https://belgrano-backend.onrender.com/products/id/${id}`);
       return dispatch({
         type: 'GET_PRODUCT_ID',
         payload: json.data,

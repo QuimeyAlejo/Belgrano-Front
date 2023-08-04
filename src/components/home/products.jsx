@@ -51,8 +51,8 @@ export default function Products() {
 
   return (
     <div>
-      <h1>Belgrano Informática</h1>
-      <h3>Productos</h3>
+      {/* <h1>Belgrano Informática</h1>
+      <h3>Productos</h3> */}
       <>
       <select onChange={e =>handlefilterByTypeProduct(e)}>  
         <option value="All">Productos</option>

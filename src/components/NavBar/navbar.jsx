@@ -1,32 +1,43 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-// import {useSelector, useDispatch } from 'react-redux';
-// import { useState, useEffect } from 'react';
-import SearchBar from '../SearchBar/searchBar';
-import { getProducts } from '../../redux/actions/actions';
-import belgrano from '../../img/belgrano.jpg';
+import Container from "react-bootstrap/Container";
 
-export default function Navbar() {
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+// import React from 'react';
+// import { Link } from 'react-router-dom';
+import belgrano from "../../img/belgrano.jpg";
+import SearchBar from "../SearchBar/searchBar";
 
-  
- 
-
-
+function Navbar1() {
   return (
-    <nav >
-     
-      <div>
-        <Link to="/">Inicio</Link>
-        <Link to="/productos">Productos</Link>
-        <Link to="/contacto">Contacto</Link>
-        <Link to="/login">Ingresar</Link>
-        <Link to="/" ><img src={belgrano} alt="Recargar productos" /> </Link> 
-      </div>
-      <>
-      <SearchBar/>
-      </>
-    </nav>
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container fluid>
+        <Navbar.Brand href="#">
+          {" "}
+          <Nav.Link to="/">
+            <img
+              src={belgrano}
+              alt="Recargar productos"
+              className="img-fluid w-25"
+            />
+          </Nav.Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: "100px" }}
+            navbarScroll
+          >
+            <Nav.Link href="/">Inicio</Nav.Link>
+            <Nav.Link href="/productos">Productos</Nav.Link>
+            <Nav.Link href="/contacto">Contacto</Nav.Link>
+            <Nav.Link href="/login">Ingresar</Nav.Link>
+          </Nav>
+          <SearchBar />
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-
+export default Navbar1;

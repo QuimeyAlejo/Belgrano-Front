@@ -3,9 +3,11 @@ import './App.css'
 // import LandingPage from './components/LandingPage'
 import Footer from './components/Footer/footer';
 import Products from './components/home/products';
-import Navbar from './components/NavBar/navbar';
+import Navbar1 from './components/NavBar/navbar';
 import UploadImage from '../src/components/Cloudinary'
 import DetailCard from './components/Detail/detail';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -16,7 +18,7 @@ function App() {
     <BrowserRouter> 
     <>
     {/* <LandingPage/> */}
-    <Navbar/>
+    <Navbar1/>
     <Routes> 
     <Route exact path='/' element={< Products/>} />
     <Route exact path='/uploadImage' element={< UploadImage/>} />
