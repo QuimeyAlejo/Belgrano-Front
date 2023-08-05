@@ -1,0 +1,16 @@
+/* ... otras reglas CSS ... */
+
+.google-button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .google-button:hover {
+    background-color: #357ae8;
+  }
+  

@@ -8,6 +8,7 @@ function SearchBar ({setCurrentPage}){
     const dispatch = useDispatch();
     const [name, setName] = useState("")
     const allProd= useSelector(state => state.allproducts)
+    console.log (allProd + "quien soy")
     
   
     function handleInputChange(e){

@@ -7,6 +7,7 @@ import Navbar1 from './components/NavBar/navbar';
 import UploadImage from '../src/components/Cloudinary'
 import DetailCard from './components/Detail/detail';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Login from './components/login/login';
 
 
 
@@ -25,7 +26,7 @@ function App() {
     {/* <Route exact path='/products/id/:id' render={({ match }) => <DetailCard id={match.params.id} />} /> */}
     <Route path="/products/id/:id" element={<DetailCard />} />
     {/* <Route exact path='/products/id/:id' element={<DetailCard />} /> */}
-    
+    <Route exact path="/login" element={<Login/>}/>
     {/* <Route exact path='/uploadMultipleImages' element={< Cloudinary/>} /> */}
     </Routes>
     <Footer/>
