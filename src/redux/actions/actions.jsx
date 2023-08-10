@@ -1,15 +1,25 @@
 import axios from 'axios';
 
 export function getProducts() {
-    return async function (dispatch) {
-        var json = await axios.get('http://localhost:3000/products')
-        // var json = await axios.get('https://belgrano-backend.onrender.com/products')
+  return async function (dispatch) {
+      var json = await axios.get('http://localhost:3000/products')
+      // var json = await axios.get('https://belgrano-backend.onrender.com/products')
 
-        return dispatch({
-            type: 'GET_PRODUCTS',
-            payload: json.data
-        })
-    }
+      return dispatch({
+          type: 'GET_PRODUCTS',
+          payload: json.data
+      })
+  }
+}export function getProductsType() {
+  return async function (dispatch) {
+      var json = await axios.get('http://localhost:3000/products/:tipo')
+      
+
+      return dispatch({
+          type: 'GET_PRODUCTSTYPE',
+          payload: json.data
+      })
+  }
 }
 export function filterByTypeProduct(payload){
     return{

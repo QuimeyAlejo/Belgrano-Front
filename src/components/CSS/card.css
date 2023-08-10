@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
@@ -13,9 +13,9 @@
     padding-top: 1px;
     margin: 30px;
     border: 1px solid black;
-    border-radius: 8px;
+    border-radius: 8px; */
    /* box-shadow: 0px 3px 10px black; */
-    transition: 0.3s;
+    /* transition: 0.3s;
     transition: all 400ms ease;
     height: 340px;
     max-width: 400px;
@@ -23,20 +23,20 @@
     backdrop-filter: blur(0px);
     background-color:rgb(198, 198, 206);
      box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
-} 
+}  */
 /* .imgbig {
     border-radius: 8px;
     border: white solid;
 } */
 
-.card:hover {
-     box-shadow: -12px 12px 2px -1px rgba(215, 215, 217, 0.2);
+/* .card:hover {
+     box-shadow: -12px 12px 2px -1px rgba(215, 215, 217, 0.2); */
     /* box-shadow: 5px 5px black; */
-    transform: translateY(-3%);
+    /* transform: translateY(-3%);
     box-shadow: 0 0px 16px 0 rgba(0,0,0,0.2);
-}
+} */
 
-.contenido {
+/* .contenido {
     font-family: 'Roboto Concensed', sans-serif;
     font-size: 17px;
     color: white;
@@ -81,11 +81,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+} */
 
-.tipo{
+/* .tipo{
     margin-top: 30px;
     font-family: 'Chakra Petch', sans-serif;
     font-size: 25px;
-    /* -webkit-text-stroke: 0.001px  orange; */
-}
+} */
+/* -webkit-text-stroke: 0.001px  orange; */
