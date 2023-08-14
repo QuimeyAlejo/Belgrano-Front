@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../login/login.css'
 import { Link } from 'react-router-dom';
-import G from "../../img/google.svg"
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -40,16 +39,10 @@ const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <div>
           <button onClick={handleLogin}>Iniciar Sesión</button>
           <button onClick={handleGoogleLogin} className="google-button">
-            <img src={G}></img>
+            Iniciar Sesión con Google
           </button>
-           </div>
-          <div>
-            <span>¿No tienes cuenta?</span>
-            <button><Link to="/register"> Registrarse </Link></button>
-          </div>
         </div>
       )}
     </div>

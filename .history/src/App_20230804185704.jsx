@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
-import LandingPage from './components/LandingPage'
+// import LandingPage from './components/LandingPage'
 import Footer from './components/Footer/footer';
 import Products from './components/home/products';
 import Navbar1 from './components/NavBar/navbar';
@@ -8,7 +8,7 @@ import UploadImage from '../src/components/Cloudinary'
 import DetailCard from './components/Detail/detail';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './components/login/login';
-import Register from './components/login/register';
+
 
 
 
@@ -22,13 +22,11 @@ function App() {
     <Navbar1/>
     <Routes> 
     <Route exact path='/' element={< Products/>} />
-    <Route exact path='/news' element={< LandingPage/>} />
     <Route exact path='/uploadImage' element={< UploadImage/>} />
     {/* <Route exact path='/products/id/:id' render={({ match }) => <DetailCard id={match.params.id} />} /> */}
     <Route path="/products/id/:id" element={<DetailCard />} />
     {/* <Route exact path='/products/id/:id' element={<DetailCard />} /> */}
     <Route exact path="/login" element={<Login/>}/>
-    <Route exact path="/register" element={<Register/>}/>
     {/* <Route exact path='/uploadMultipleImages' element={< Cloudinary/>} /> */}
     </Routes>
     <Footer/>

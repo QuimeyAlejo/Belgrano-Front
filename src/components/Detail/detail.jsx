@@ -32,9 +32,9 @@ function DetailCard() {
   return (
     <div>
       <>
-        <Button variant="primary">
+        <button>
           <Link to="/">Volver</Link>
-        </Button>
+        </button>
       </>
 
       <Card style={{ width: "18rem" }}>
@@ -46,7 +46,7 @@ function DetailCard() {
             <h4>Descripción: {products.descripcion}</h4>
             <h4>$ {products.precio}</h4>
           </Card.Text>
-          <Button
+          {/* <Button
             variant="primary"
             onClick={() => {
               axios
@@ -58,7 +58,10 @@ function DetailCard() {
             }}
           >
             Comprar!
-          </Button>
+          </Button> */}
+          <button><Link to="/"> Añadir al carrito! </Link></button>
+           
+          
         </Card.Body>
       </Card>
     </div>

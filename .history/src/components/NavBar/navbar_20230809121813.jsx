@@ -28,7 +28,7 @@ function Navbar1() {
             navbarScroll
           >
             <Nav.Link href="/">Inicio</Nav.Link>
-            <Nav.Link href="/news">Productos</Nav.Link>
+            <Nav.Link href="/productos">Productos</Nav.Link>
             <Nav.Link href="/contacto">Contacto</Nav.Link>
             <Nav.Link href="/login">Ingresar</Nav.Link>
           </Nav>

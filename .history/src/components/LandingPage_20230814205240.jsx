@@ -17,7 +17,7 @@ export default function LandingPage() {
       <Carousel>
       <div>
         <img src={mother} alt="Imagen 1" />
-        <p className="legend">Lo nuevo en gaming</p>
+        <p className="legend">Descripción de la imagen 1</p>
       </div>
       <div>
         <img src="imagen2.jpg" alt="Imagen 2" />

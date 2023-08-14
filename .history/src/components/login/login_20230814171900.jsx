@@ -40,12 +40,11 @@ const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <div>
           <button onClick={handleLogin}>Iniciar Sesión</button>
           <button onClick={handleGoogleLogin} className="google-button">
             <img src={G}></img>
           </button>
-           </div>
+          <div> </div>
           <div>
             <span>¿No tienes cuenta?</span>
             <button><Link to="/register"> Registrarse </Link></button>
